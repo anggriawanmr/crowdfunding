@@ -49,6 +49,25 @@ const CreateCampaign = () => {
             handleChange={() => {}}
           />
         </div>
+
+        <FormField
+          labelName="Story *"
+          placeholder="Write your story"
+          isTextArea
+          value={form.description}
+          handleChange={() => {}}
+        />
+
+        <div className="w-full flex justify-start items-center p-4 bg-[#8c6dfd] h-[120px] rounded-[10px]">
+          <img
+            src={money}
+            alt="money"
+            className="w-[40px] h-[40px] object-contain"
+          />
+          <h4 className="font-epilogue font-bold text-[25px] text-white ml-[20px]">
+            You will get 100% of the raised amount
+          </h4>
+        </div>
       </form>
     </div>
   );
