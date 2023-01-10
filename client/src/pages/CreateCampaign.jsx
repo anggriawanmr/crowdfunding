@@ -48,7 +48,6 @@ const CreateCampaign = () => {
             value={form.title}
             handleChange={() => {}}
           />
-          <FormField />
         </div>
       </form>
     </div>
