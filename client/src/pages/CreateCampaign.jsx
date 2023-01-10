@@ -34,6 +34,20 @@ const CreateCampaign = () => {
         className="w-full mt-[65px] flex flex-col gap-[30px]"
       >
         <div className="flex flex-wrap gap-[40px]">
+          <FormField
+            labelname="Your Name *"
+            placeholder="John Doe"
+            inputType="text"
+            value={form.name}
+            handleChange={() => {}}
+          />
+          <FormField
+            labelname="Campaign Title *"
+            placeholder="Write a title"
+            inputType="text"
+            value={form.title}
+            handleChange={() => {}}
+          />
           <FormField />
         </div>
       </form>
