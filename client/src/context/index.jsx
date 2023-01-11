@@ -38,4 +38,14 @@ export const StateContextProvider = ({ children }) => {
       console.log('contract call failure', error);
     }
   };
+
+  return (
+    <StateContext.Provider
+      value={{ address, contract, createCampaign: publishCampaign }}
+    >
+      {children}
+    </StateContext.Provider>
+  );
 };
+
+export const useStateContext = () => useContext(StateContext);
