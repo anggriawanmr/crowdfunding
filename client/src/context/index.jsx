@@ -29,7 +29,7 @@ export const StateContextProvider = ({ children }) => {
         form.title, //title
         form.description, //description
         form.target,
-        new Date(form.deadline).getTime, //deadline
+        new Date(form.deadline).getTime(), //deadline
         form.image,
       ]);
 
@@ -41,7 +41,7 @@ export const StateContextProvider = ({ children }) => {
 
   return (
     <StateContext.Provider
-      value={{ address, contract, createCampaign: publishCampaign }}
+      value={{ address, contract, connect, createCampaign: publishCampaign }}
     >
       {children}
     </StateContext.Provider>
