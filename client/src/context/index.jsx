@@ -39,9 +39,21 @@ export const StateContextProvider = ({ children }) => {
     }
   };
 
+  const getCampaigns = async () => {
+    const campaigns = await contract.call('getCampaigns');
+
+    console.log(campaigns);
+  };
+
   return (
     <StateContext.Provider
-      value={{ address, contract, connect, createCampaign: publishCampaign }}
+      value={{
+        address,
+        contract,
+        connect,
+        createCampaign: publishCampaign,
+        getCampaigns,
+      }}
     >
       {children}
     </StateContext.Provider>
