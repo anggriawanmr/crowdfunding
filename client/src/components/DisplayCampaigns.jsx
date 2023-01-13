@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import FunCard from './FunCard';
 import { loader } from '../assets';
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
