@@ -25,6 +25,16 @@ const FunCard = ({
         alt="fund"
         className="w-full h-[158px] object-cover rounded-[15px]"
       />
+
+      <div className="flex flex-col p-4">
+        <div>
+          <img
+            src={tagType}
+            alt="tag"
+            className="w-[17px] h-[17px] object-contain"
+          />
+        </div>
+      </div>
     </div>
   );
 };
