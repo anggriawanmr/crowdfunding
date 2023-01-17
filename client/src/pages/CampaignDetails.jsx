@@ -53,7 +53,7 @@ const CampaignDetails = () => {
       <div className="mt-[60px] flex lg:flex-row flex-col gap-5">
         <div className="flex-[2] flex flex-col gap-[40px]">
           <div>
-            <h4 className="font-epilogue font-semibold text-[18px] text-white p-3 uppercase">
+            <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">
               Creator
             </h4>
 
@@ -73,6 +73,18 @@ const CampaignDetails = () => {
                   10 Campaigns
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">
+              Story
+            </h4>
+
+            <div className="mt-[20px]">
+              <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">
+                {state.description}
+              </p>
             </div>
           </div>
         </div>
