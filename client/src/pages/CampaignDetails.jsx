@@ -17,6 +17,8 @@ const CampaignDetails = () => {
 
   const remainingDays = daysLeft(state.deadline);
 
+  const handleDonate = async () => {};
+
   return (
     <div>
       {isLoading && 'Loading...'}{' '}
@@ -124,7 +126,7 @@ const CampaignDetails = () => {
                 onChange={(e) => setAmount(e.target.value)}
               />
 
-              <div className="mt-[20px] p-4 bg-[#13131a] rounded-[10px]">
+              <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
                 <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">
                   Back it because you believe in it.
                 </h4>
@@ -133,6 +135,13 @@ const CampaignDetails = () => {
                   you.
                 </p>
               </div>
+
+              <CustomButton
+                btnType="button"
+                title="Fund Campaign"
+                styles="w-full bg-[#8c6dfd]"
+                handleClick={handleDonate}
+              />
             </div>
           </div>
         </div>
