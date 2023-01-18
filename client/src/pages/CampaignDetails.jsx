@@ -17,6 +17,12 @@ const CampaignDetails = () => {
 
   const remainingDays = daysLeft(state.deadline);
 
+  const fetchDonators = async () => {
+    const data = await getDonations(state.pId);
+
+    setDonators(data);
+  };
+
   const handleDonate = async () => {
     setIsLoading(true);
 
