@@ -23,6 +23,10 @@ const CampaignDetails = () => {
     setDonators(data);
   };
 
+  useEffect(() => {
+    if (contract) fetchDonators();
+  }, [contract, address]);
+
   const handleDonate = async () => {
     setIsLoading(true);
 
